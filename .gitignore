@@ -1,0 +1,5 @@
+# Rust build artifacts in examples
+examples/**/target/
+examples/**/.cargo/
+examples/**/.rustc_info.json
+examples/**/Cargo.lock
