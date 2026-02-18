@@ -1,6 +1,6 @@
 ---
-title: "Data Quality and Performance in Rust: Benchmarking Aggregations Across Approaches"
-slug: dq-and-perf-in-rust-benchmarking-aggregations-across-aproaches
+title: "Data quality and performance: benchmarking aggregations across approaches"
+slug: dq-and-perf-benchmarking-aggregations-across-aproaches
 tags: ["rust", "data", "serde", "polars", "rayon", "benchmark"]
 date: 2026-02-18
 ---
