@@ -5,3 +5,28 @@ edition = "2024"
 
 [dependencies]
 rand = "0.10.0"
+serde = { version = "1.0", features = ["derive"] }
+rayon = { version = "1.10", optional = true }
+polars = { version = "0.44", optional = true }
+
+[features]
+rayon = ["dep:rayon"]
+polars = ["dep:polars"]
+all = ["rayon", "polars"]
+
+[[bin]]
+name = "bench_analysis"
+path = "benches/bench_analysis.rs"
+
+[[bin]]
+name = "bench_parse"
+path = "benches/bench_parse.rs"
+
+[[bin]]
+name = "bench_open_file"
+path = "benches/bench_open_file.rs"
+
+[[bin]]
+name = "bench_full_pipeline"
+path = "benches/bench_full_pipeline.rs"
+
